@@ -1,4 +1,4 @@
-package com.example.technicalsupportv2;
+package com.example.kdb;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
