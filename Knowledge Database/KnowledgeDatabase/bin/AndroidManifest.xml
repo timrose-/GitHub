@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.knowledgedatabase"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.hardware.camera" android:required="false"></uses-feature>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.knowledgedatabase.Home"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.knowledgedatabase.Categories"
+            android:label="@string/title_activity_categories"
+            android:parentActivityName="com.example.knowledgedatabase.Home" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.knowledgedatabase.Home" />
+        </activity>
+        <activity
+            android:name="com.example.knowledgedatabase.DisplayGuide"
+            android:label="@string/title_activity_display_guide"
+            android:parentActivityName="com.example.knowledgedatabase.Categories" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.knowledgedatabase.Categories" />
+        </activity>
+        <activity
+            android:name="com.example.knowledgedatabase.TestGuide"
+            android:label="@string/title_activity_test_guide"
+            android:parentActivityName="com.example.knowledgedatabase.Categories" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.knowledgedatabase.Categories" />
+        </activity>
+        <activity
+            android:name="com.example.knowledgedatabase.GuidesList"
+            android:label="@string/title_activity_guides_list"
+            android:parentActivityName="com.example.knowledgedatabase.Categories" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.knowledgedatabase.Categories" />
+        </activity>
+        <activity
+            android:name="com.example.knowledgedatabase.Search"
+            android:label="@string/title_activity_search"
+            android:parentActivityName="com.example.knowledgedatabase.Home" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.knowledgedatabase.Home" />
+        </activity>
+        <activity
+            android:name="com.example.knowledgedatabase.Settings"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="com.example.knowledgedatabase.Home" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.knowledgedatabase.Home" />
+        </activity>
+        <activity
+            android:name="com.example.knowledgedatabase.AddGuide"
+            android:label="@string/title_activity_add_guide"
+            android:parentActivityName="com.example.knowledgedatabase.Home" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.knowledgedatabase.Home" />
+        </activity>
+    </application>
+
+</manifest>
